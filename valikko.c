@@ -14,6 +14,7 @@ int main() {
         printf("Valitse peli:\n");
         printf("1. Lotto\n");
         printf("2. Numeronarvauspeli\n");
+        printf("3. Ksp\n");
         printf("0. Lopeta\n");
         printf("Valintasi: ");
         scanf("%d", &valinta);
@@ -29,6 +30,8 @@ int main() {
                 break;
             case 2:
                 executeGame("ArvaaNumero");
+                case 3:
+                executeGame("Ksp");
                 break;
             default:
                 printf("Virheellinen valinta. Valitse 1, 2 tai 0.\n");
